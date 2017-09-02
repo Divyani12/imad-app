@@ -21,6 +21,9 @@ app.get('/section2',function(req,res){
     res.send('Article 2 is requested...soon it wil be served');
 });
 
+app.get('/new',function(req,res){
+    res.send('New to web app developement');
+});
 app.get('/ui/madi.png', function (req, res) {
   res.send(path.join(__dirname, 'ui', 'madi.png'));
 });
