@@ -13,9 +13,9 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-//app.get('/section1',function(req,res){
- // res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
-//});
+app.get('/section1',function(req,res){
+  res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
+});
 
 app.get('/section2',function(req,res){
     res.send('Article 2 is requested...soon it wil be served');
